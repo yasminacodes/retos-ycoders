@@ -1,0 +1,69 @@
+.yc-body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.yc-body__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+}
+
+.yc-body__score {
+    font-size: 2.0rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.yc-body__canvas,
+.yc-body__result {
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+
+.yc-body__user-form {
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.yc-body__button,
+.yc-body__user-form__btn {
+    border: 0;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+}
+
+.yc-body__user-form__btn {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+}
+
+.yc-body__user-form__btn:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+.yc-body__button {
+    background-color: grey;
+    color: black;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+}
+
+.yc-body__button:hover {
+    background-color: darkgray;
+}

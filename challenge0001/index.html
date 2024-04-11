@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge YCoders 0001</title>
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="yc-body">
+
+    <p class="yc-body__score" id="user-score">Score: 0</p>
+
+    <div class="yc-body__wrapper">
+        <canvas width="480" height="480" class="yc-body__canvas" id="canvas-color"></canvas>
+
+        <div id="user-result" class="yc-body__result" style="width: 480px; height: 480px;"></div>
+    </div>
+    
+
+    <form id="user-form" class="yc-body__user-form">
+        <label>
+            Red
+            <input type="range" name="red" min="0" max="255" value="0" required>
+        </label>
+
+        <label>
+            Green
+            <input type="range" name="green" min="0" max="255" value="0" required>
+        </label>
+
+        <label>
+            Blue
+            <input type="range" name="blue" min="0" max="255" value="0" required>
+        </label>
+        
+        <input type="submit" class="yc-body__user-form__btn" value="Enviar">
+    </form>
+
+    <button class="yc-body__button" id="reload-button">Recargar</button>
+    
+    <script type="text/javascript" src="js/utils.js"></script>
+</body>
+
+</html>
