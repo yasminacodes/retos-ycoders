@@ -1,0 +1,59 @@
+.yc-body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/space.png);
+    padding: 50px;
+}
+
+.yc-body__score {
+    font-size: 2.0rem;
+    color: var(--text-main);
+    margin-bottom: 50px;
+}
+.yc-body__level {
+    font-size: 1.0rem;
+    color: var(--text-main);
+    margin-bottom: 50px;
+}
+
+.yc-body__game {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.yc-base {
+    position: absolute;
+    background-image: url(../img/chars.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+}
+
+.yc-body__game-over {
+    font-size: 3.0rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: center;
+}
+
+.yc-body__game-over--hidden {
+    display: none;
+}
+
+.yc-body__play-again {
+    padding: 10px;
+    padding-inline: 20px;
+    background-color: var(--text-main);
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
