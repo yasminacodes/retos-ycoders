@@ -1,0 +1,295 @@
+.league-spartan-400 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.league-spartan-600 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.league-spartan-900 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.yc-body {
+    background-color: var(--background-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    padding-inline: 10vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.yc-body__title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: var(--text-light);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.yc-body__subtitle {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.yc-body__text {
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.yc-body__upload-window {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+    width: 80%;
+    max-width: 800px;
+    border-radius: 12px;
+    padding-inline: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yc-body__upload-window__text {
+    text-align: center;
+}
+
+.yc-body__upload-window__image-sel {
+    height: 30vh;
+    overflow-y: auto;
+    border-radius: 12px;
+    border: 1px dashed var(--border-light);
+    padding: 30px;
+    width: 100%;
+    margin-top: 20px;
+    transition: border 0.3s ease;
+    -webkit-transition: border 0.3s ease;
+    -moz-transition: border 0.3s ease;
+    -ms-transition: border 0.3s ease;
+    -o-transition: border 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yc-body__upload-window__image-sel:hover,
+.yc-body__upload-window__image-sel--drag {
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -ms-grab;
+    cursor: -o-grab;
+    border: 1px dashed var(--border-accent);
+}
+
+.yc-body__upload-window__image-sel:active {
+    cursor: move;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -ms-grabbing;
+    cursor: -o-grabbing;
+}
+
+.yc-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -moz-mask-size: contain;
+    -moz-mask-repeat: no-repeat;
+    -moz-mask-position: center;
+    -ms-mask-size: contain;
+    -ms-mask-repeat: no-repeat;
+    -ms-mask-position: center;
+    -o-mask-size: contain;
+    -o-mask-repeat: no-repeat;
+    -o-mask-position: center;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    -moz-transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    -ms-transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    -o-transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    background-color: var(--icon-default);
+}
+
+.yc-icon--upload {
+    mask-image: url(../img/icons/upload-solid.svg);
+    -webkit-mask-image: url(../img/icons/upload-solid.svg);
+    -moz-mask-image: url(../img/icons/upload-solid.svg);
+    -ms-mask-image: url(../img/icons/upload-solid.svg);
+    -o-mask-image: url(../img/icons/upload-solid.svg);
+}
+
+.yc-icon--trash {
+    mask-image: url(../img/icons/trash-solid.svg);
+    -webkit-mask-image: url(../img/icons/trash-solid.svg);
+    -moz-mask-image: url(../img/icons/trash-solid.svg);
+    -ms-mask-image: url(../img/icons/trash-solid.svg);
+    -o-mask-image: url(../img/icons/trash-solid.svg);
+}
+
+.yc-body__upload-window__image-sel__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.yc-body__upload-window__image-sel:hover .yc-body__upload-window__image-sel__icon,
+.yc-body__upload-window__image-sel--drag .yc-body__upload-window__image-sel__icon {
+    background-color: var(--icon-accent);
+}
+
+.yc-body__upload-window__form__input--hidden {
+    display: none;
+}
+
+.yc-button {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.yc-button:hover {
+    cursor: pointer;
+}
+
+.yc-button--submit {
+    background-color: var(--button-submit-bg);
+    color: var(--button-submit-text);
+}
+
+.yc-button--submit:hover {
+    background-color: var(--button-submit-bg-accent);
+    color: var(--button-submit-text-accent);
+}
+
+.yc-body__upload-window__form {
+    margin-top: 30px;
+}
+
+.yc-body__upload-window__image-sel__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.yc-body__upload-window__image-sel__list__li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vh;
+    height: 15vh;
+    background-color: var(--image-background);
+    position: relative;
+}
+
+.yc-body__upload-window__image-sel__list__li__file {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+    -webkit-transition: filter 0.3s ease;
+    -moz-transition: filter 0.3s ease;
+    -ms-transition: filter 0.3s ease;
+    -transition: filter 0.3s ease;
+}
+
+.yc-body__upload-window__image-sel__list__li__icon {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -transition: opacity 0.3s ease;
+}
+
+.yc-body__upload-window__image-sel__list__li:hover .yc-body__upload-window__image-sel__list__li__file {
+    cursor: pointer;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+}
+
+.yc-body__upload-window__image-sel__list__li:hover .yc-body__upload-window__image-sel__list__li__icon {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.yc-body__upload-window__link {
+    margin-top: 30px;
+}
+
+.yc-body__upload-window__link a {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    background-color: var(--button-download-bg);
+    color: var(--button-download-text);
+}
+
+.yc-body__upload-window__link a:hover {
+    cursor: pointer;
+    background-color: var(--button-download-bg-accent);
+    color: var(--button-download-text-accent);
+}

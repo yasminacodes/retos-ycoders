@@ -1,0 +1,21 @@
+:root {
+    --background-dark: #302c75;
+    --background-light: #aaa6eb;
+    --border-light: #fdfcff;
+    --border-accent: #ffbd61;
+    --text-light: #fdfcff;
+    --text-dark: #151424;
+    --icon-default: #fdfcff;
+    --icon-accent: #ffbd61;
+    --button-submit-bg: #ffa323;
+    --button-submit-text: #151424;
+    --button-submit-bg-accent: #ffbd61;
+    --button-submit-text-accent: #151424;
+
+    --button-download-bg: #22cf33;
+    --button-download-text: #151424;
+    --button-download-bg-accent: #4ae659;
+    --button-download-text-accent: #151424;
+
+    --image-background: #8c89d3;
+}

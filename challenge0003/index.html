@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge YCoders 0003</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="css/colors.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="yc-body">
+
+    <h1 class="yc-body__title league-spartan-900">Conversor de imágenes para web</h1>
+    <h2 class="yc-body__subtitle league-spartan-400">Transforma tus imágenes en formato JPG o PNG en formato WEBP para que tengan un mejor rendimiento en tu sitio web</h2>
+
+    <section class="yc-body__upload-window">
+        <p class="yc-body__text league-spartan-600 yc-body__upload-window__text">
+            Pulsa o arrastra tus imágenes a continuación para empezar a convertirlas.
+        </p>
+
+        <div class="yc-body__upload-window__image-sel" id="upload-files-container">
+            <icon class="yc-icon yc-icon--upload yc-body__upload-window__image-sel__icon"></icon>
+        </div>
+
+        <form class="yc-body__upload-window__form" id="upload-files-form">
+            <input class="yc-body__upload-window__form__input yc-body__upload-window__form__input--hidden" type="file" id="upload-files-input" name="cfiles" enctype="multipart/form-data" accept="image/png, image/jpeg" multiple>
+            <input class="yc-button yc-button--submit yc-body__upload-window__form__submit league-spartan-600" type="submit" value="Convertir">
+        </form>
+
+        <p class="yc-body__upload-window__link league-spartan-400" id="output-link"></p>
+    </section>
+
+    <script type="text/javascript" src="js/utils.js"></script>
+
+</html>
